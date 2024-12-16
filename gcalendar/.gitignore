@@ -1,0 +1,23 @@
+# Archivos y carpetas de Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entorno virtual
+venv/
+env/
+.venv/
+.env/
+
+# Archivos de configuración de Django
+db.sqlite3
+media/
+static/
+
+# Archivos de credenciales y secretos
+credentials.json
+token.pickle
+
+# Archivos de configuración de Django (si usas configuración por entornos)
+settings.py
