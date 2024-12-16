@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos del Calendario</title>
+</head>
+<body>
+    <h1>Tus próximos eventos</h1>
+    <ul>
+        {% for event in events %}
+            <li>
+                <strong>{{ event.summary }}</strong> - 
+                {{ event.start.dateTime|default:event.start.date }}
+            </li>
+        {% empty %}
+            <li>No hay eventos próximos.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
